@@ -26,13 +26,13 @@ SELECT AN OPTION TO CONTINUE:"
 read -r MAIN_MENU
 case "$MAIN_MENU" in
 
-"0")    clear && exit 0;;    
-"1")    MAIN_MENU;;
-"2")    SUB_MENU;;
-*)      INVALID_SELECTION;;
-        esac
-    done
-    }
+"0")  clear && exit 0;;    
+"1")  MAIN_MENU;;
+"2")  SUB_MENU;;
+*)    INVALID_SELECTION;;
+      esac
+  done
+}
 
 SUB_MENU() {
 while :
@@ -54,8 +54,8 @@ case "$SUB_MENU" in
 "1") MAIN_MENU;;
 "2") echo "OPTION 2 CAN DO SOME COOL COMMANDS ETC.."
 *)   INVALID_SELECTION;;
-    esac
-done
+     esac
+  done
 }
 
 MAIN_MENU
